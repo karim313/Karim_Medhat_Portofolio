@@ -1,0 +1,22 @@
+{
+  "name": "Kareem Medhat Portfolio",
+  "short_name": "Kareem Portfolio",
+  "description": "Premium Front-End Developer Portfolio built with Next.js & Framer Motion.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#030014",
+  "theme_color": "#030014",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
