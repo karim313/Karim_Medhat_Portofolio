@@ -76,7 +76,7 @@ export default function Hero() {
             <h1 className="hero-heading" style={{ marginBottom: '1.5rem', fontWeight: 800 }}>
               Creative <span className="text-gradient">Developer</span>
             </h1>
-            <div style={{ height: '2.5rem', fontSize: 'clamp(1.1rem, 4vw, 1.5rem)', opacity: 0.8, fontFamily: 'var(--font-outfit)' }}>
+            <div style={{ minHeight: '3.5rem', fontSize: 'clamp(1.1rem, 4vw, 1.5rem)', opacity: 0.8, fontFamily: 'var(--font-outfit)', marginBottom: '1rem' }}>
               {currentText}<span className="animate-pulse-custom">|</span>
             </div>
             

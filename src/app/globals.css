@@ -44,9 +44,9 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
 }
 
-h1 { font-size: clamp(2.5rem, 8vw, 4.5rem); }
-h2 { font-size: clamp(2rem, 5vw, 3rem); }
-h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
+h1 { font-size: clamp(2rem, 8vw, 4.5rem); }
+h2 { font-size: clamp(1.75rem, 5vw, 3rem); }
+h3 { font-size: clamp(1.25rem, 3vw, 2rem); }
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
@@ -251,7 +251,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3rem;
+  gap: 2.5rem;
   width: 100%;
 }
 
@@ -283,26 +283,29 @@ section {
   }
 }
 
-/* Desktop hero */
-@media (min-width: 1024px) {
+/* Tablet & Desktop hero */
+@media (min-width: 768px) {
   .hero-section {
     padding-top: 0;
-    margin-top: 50px;
+    margin-top: 60px;
   }
 
   .hero-content {
     flex-direction: row;
-    gap: 2rem;
+    gap: 3rem;
     text-align: left;
+    align-items: center;
   }
 
   .hero-text {
     order: 1;
     text-align: left;
+    flex: 1.2;
   }
 
   .hero-image-container {
     order: 2;
+    flex: 0.8;
   }
 
   .hero-buttons {
@@ -310,8 +313,8 @@ section {
   }
 
   .hero-image-wrapper {
-    width: clamp(350px, 40vw, 450px);
-    height: clamp(350px, 40vw, 450px);
+    width: clamp(300px, 35vw, 450px);
+    height: clamp(300px, 35vw, 450px);
   }
 }
 
