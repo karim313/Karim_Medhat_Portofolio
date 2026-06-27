@@ -1,9 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import CursorFollower from "@/components/CursorFollower";
-import ScrollProgress from "@/components/ScrollProgress";
-import AnimatedBackground from "@/components/AnimatedBackground";
+import ClientShell from "@/components/ClientShell";
 
 export const metadata: Metadata = {
   title: "Kareem Medhat | Premium Front-End Developer Portfolio",
@@ -51,17 +48,7 @@ export default function RootLayout({
         />
       </head>
       <body className="antialiased">
-        <ScrollProgress />
-        <CursorFollower />
-        <AnimatedBackground />
-        <Navbar />
-        <main style={{ position: 'relative', zIndex: 1 }}>
-          {children}
-        </main>
-
-        <footer style={{ padding: '4rem 2rem', textAlign: 'center', opacity: 0.5, fontSize: '0.9rem' }}>
-          <p>© {new Date().getFullYear()} Kareem Medhat. Built with Next.js & Framer Motion.</p>
-        </footer>
+        <ClientShell>{children}</ClientShell>
       </body>
     </html>
   );
