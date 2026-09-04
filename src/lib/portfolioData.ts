@@ -36,6 +36,7 @@ export interface Project {
   image: string;
   link: string;
   tags: string[];
+  github?: string;
 }
 
 export interface ContactData {
@@ -101,43 +102,66 @@ and speed.`,
   projects: [
     {
       id: "p1",
-      title: "Premium E-Commerce",
-      description:
-        "A high-performance e-commerce platform built with Next.js 14, featuring server-side rendering for SEO, optimized cart state management with Zustand, and silky-smooth page transitions powered by Framer Motion. Achieved a 98 Lighthouse performance score.",
-      image:
-        "https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=1000&auto=format&fit=crop",
-      link: "https://e-commerce-five-tawny-65.vercel.app",
-      tags: ["Next.js", "Tailwind", "Framer Motion", "Zustand"],
+      title: "Al-Shakhs Trading",
+      description: "Corporate trading website engineered for speed and trust. Built with React and Vite for instant HMR and lightning-fast builds.",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop",
+      link: "https://alshakhs-trading.vercel.app/",
+      github: "https://github.com/karim313/alshakhs_trading",
+      tags: ["React", "Vite", "Trading"],
     },
     {
       id: "p2",
-      title: "Al-Shakhs Trading",
-      description:
-        "Corporate trading website engineered for speed and trust. Built with React and Vite for instant HMR and lightning-fast builds. Uses CSS Modules for scoped styling, custom scroll animations, and responsive data tables for real-time commodity listings.",
-      image:
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop",
-      link: "https://alshakhs-trading.vercel.app",
-      tags: ["React", "Vite", "CSS Modules", "Responsive"],
+      title: "Roqayya",
+      description: "A modern web application offering a responsive and clean user interface.",
+      image: "https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=1000&auto=format&fit=crop",
+      link: "https://roqayya-y19h.vercel.app/",
+      github: "https://github.com/karim313/roqayya",
+      tags: ["Web App", "Responsive", "Modern UI"],
     },
     {
       id: "p3",
-      title: "Portfolio V2",
-      description:
-        "An earlier iteration of this portfolio showcasing advanced canvas animations, WebGL particle effects, and a fully custom design system. Served as the testing ground for gesture-based interactions and scroll-driven storytelling.",
-      image:
-        "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1000&auto=format&fit=crop",
-      link: "#",
-      tags: ["React", "Canvas API", "GSAP", "WebGL"],
+      title: "Match Hire — AI Recruitment",
+      description: "An AI-powered recruitment platform designed to match candidates with the best job opportunities.",
+      image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1000&auto=format&fit=crop",
+      link: "https://match-hire-vt98.vercel.app/",
+      github: "https://github.com/karim313/Match_Hire",
+      tags: ["AI", "Recruitment", "Platform"],
     },
     {
       id: "p4",
-      title: "Fake Portfolio",
-      description:
-        "A visually striking personal portfolio crafted with Next.js and Framer Motion, featuring an interactive gradient mesh background, custom spring-physics cursor, scroll progress tracking, parallax hero with typing animation, and staggered entrance animations throughout.",
-      image:
-        "https://images.unsplash.com/photo-1614850523459-c2f4c699c52e?q=80&w=1000&auto=format&fit=crop",
-      link: "https://fake-portofolio.vercel.app",
-      tags: ["Next.js", "Framer Motion", "CSS Variables", "Responsive"],
+      title: "Law System Management — MCP",
+      description: "Law System Management server integration with MCP for streamlined firm operations.",
+      image: "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?q=80&w=1000&auto=format&fit=crop",
+      link: "https://law-systeme-management-mcp-q6hv-six.vercel.app/",
+      github: "https://github.com/karim313/law-systeme-management-mcp",
+      tags: ["MCP", "Management", "System"],
+    },
+    {
+      id: "p5",
+      title: "My Prof Store",
+      description: "A comprehensive E-Commerce Platform for a customized shopping experience.",
+      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=1000&auto=format&fit=crop",
+      link: "https://my-prof-store-fqk9.vercel.app/",
+      github: "https://github.com/karim313/myProfStore",
+      tags: ["E-Commerce", "Store", "Shopping"],
+    },
+    {
+      id: "p6",
+      title: "Education Platform",
+      description: "An education platform frontend combined with a detailed management dashboard.",
+      image: "https://images.unsplash.com/photo-1513258496099-48168024aec0?q=80&w=1000&auto=format&fit=crop",
+      link: "https://eduplatform-front-end.vercel.app/",
+      github: "https://github.com/karim313/eduplatformFrontEnd",
+      tags: ["Education", "Platform", "Dashboard"],
+    },
+    {
+      id: "p7",
+      title: "Graduation Project — E-Commerce",
+      description: "A complete end-to-end E-Commerce store developed as a graduation project.",
+      image: "https://images.unsplash.com/photo-1614850523459-c2f4c699c52e?q=80&w=1000&auto=format&fit=crop",
+      link: "https://ecommerce-store.vercel.app",
+      github: "https://github.com/karim313/E-commerce",
+      tags: ["Graduation", "E-Commerce", "Full Stack"],
     },
   ],
   contact: {

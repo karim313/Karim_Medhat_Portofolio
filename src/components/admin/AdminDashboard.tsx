@@ -72,7 +72,7 @@ export default function AdminDashboard() {
     setData(d => ({ ...d, projects: d.projects.map(p => p.id === id ? { ...p, [key]: val } : p) }));
 
   const addProject = () =>
-    setData(d => ({ ...d, projects: [...d.projects, { id: nanoid(), title: 'New Project', description: '', image: '', link: '#', tags: [] }] }));
+    setData(d => ({ ...d, projects: [...d.projects, { id: nanoid(), title: 'New Project', description: '', image: '', link: '#', github: '', tags: [] }] }));
 
   const removeProject = (id: string) =>
     setData(d => ({ ...d, projects: d.projects.filter(p => p.id !== id) }));
@@ -285,6 +285,7 @@ function ProjectsEditor({ data, updateProject, addProject, removeProject }: {
           <div className="admin-grid-2">
             <Field label="Title"><input className="admin-input" value={p.title} onChange={e => updateProject(p.id, 'title', e.target.value)} /></Field>
             <Field label="Live URL"><input className="admin-input" value={p.link} onChange={e => updateProject(p.id, 'link', e.target.value)} /></Field>
+            <Field label="GitHub URL"><input className="admin-input" value={p.github || ''} onChange={e => updateProject(p.id, 'github', e.target.value)} /></Field>
             <div className="admin-full">
               <Field label="Image URL">
                 <input className="admin-input" value={p.image} onChange={e => updateProject(p.id, 'image', e.target.value)} placeholder="https://..." />
