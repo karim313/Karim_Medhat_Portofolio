@@ -79,7 +79,7 @@ is GPU-accelerated and optimized to ensure a 60fps experience for the user. My g
 to push the boundaries of what's possible on the web while maintaining accessibility
 and speed.`,
     stats: [
-      { label: "Experience", value: "2+ Years" },
+      { label: "Learning", value: "3+ Years" },
       { label: "Projects", value: "15+ Completed" },
       { label: "Location", value: "Egypt" },
     ],
